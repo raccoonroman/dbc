@@ -1,0 +1,73 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('../fonts/lato-v16-latin-regular.woff2') format('woff2'),
+    url('../fonts/lato-v16-latin-regular.woff') format('woff');
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+    url('../fonts/lato-v16-latin-700.woff2') format('woff2'),
+    url('../fonts/lato-v16-latin-700.woff') format('woff');
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+    url('../fonts/lato-v16-latin-900.woff2') format('woff2'),
+    url('../fonts/lato-v16-latin-900.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Arial' sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #353535;
+  background-color: #ffffff;
+  min-width: 320px;
+}
