@@ -39,7 +39,11 @@ gulp.task("images", function () { // запускается один раз ко
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 7}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+            {removeViewBox: false},
+        ]
+    })
   ]))
   .pipe(gulp.dest("source/img"));
 });
