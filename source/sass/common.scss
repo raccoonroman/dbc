@@ -113,7 +113,7 @@ body {
   background-size: 100%;
   border-radius: 5px;
   background-size: 100% 200%;
-  transition: background-position .2s, color .2s;
+  transition: background-position .1s, color .1s;
 
   &:hover,
   &:focus {
@@ -128,6 +128,17 @@ body {
   &--white {
     color: #0f077b;
     background-image: linear-gradient(to bottom, #fff 50%, #F6941E 50%);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-position: 0 100%;
+    }
+  }
+
+  &--blue {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #0F087D 50%, #F6941E 50%);
 
     &:hover,
     &:focus {
