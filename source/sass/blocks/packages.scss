@@ -1,0 +1,18 @@
+.packages {
+  margin-top: 4%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.packages__list {
+  @include list;
+  margin: 0 -15px;
+  display: flex;
+  justify-content: center;
+}
+
+.packages__heading {
+  padding-bottom: 20px;
+  margin-bottom: 3%;
+}

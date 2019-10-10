@@ -1,5 +1,6 @@
 .benefits {
   padding-top: 7%;
+  padding-bottom: 12%;
   font-size: 18px;
   text-align: center;
   background-color: #F0F0F5;
@@ -11,4 +12,24 @@
 
 .benefits__description {
   margin: 0;
+  margin-bottom: 10%;
+}
+
+.benefits__list {
+  @include list;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: center;
+
+  h2,
+  h3,
+  h4 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  p {
+    opacity: .66;
+  }
 }

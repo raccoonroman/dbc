@@ -1,0 +1,65 @@
+.package {
+  padding: 28px;
+  background-color: #F4F7FC;
+}
+
+.package__title {
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.package__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  opacity: .66;
+  border-bottom: 1px solid #E6E9EE;
+}
+
+.package__price {
+  line-height: 1;
+
+  sup {
+    font-size: 0.6em;
+  }
+}
+
+.package__per-date {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .66;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+}
+
+.package__list {
+  @include list;
+  margin-top: 16px;
+  border-top: 1px solid #E6E9EE;
+  margin-bottom: 24px;
+  opacity: .8;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.package__item {
+  padding: 6px;
+  border-bottom: 1px solid #E6E9EE;
+}
+
+.packages__button {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .packages__button {
+    padding: 14px;
+    min-width: 300px;
+    font-size: 20px;
+  }
+}
+
