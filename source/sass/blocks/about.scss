@@ -30,11 +30,13 @@
 
 .about__button {
   margin: 20px 0;
-  background-image: linear-gradient(to bottom, #F6941E 50%, #0f077b 50%);
+  background-color: #F6941E;
+  // background-image: linear-gradient(to bottom, #F6941E 50%, #0f077b 50%);
 
   &:hover,
   &:focus {
     color: #fff;
+    background-color: #0f077b;
   }
 }
 
