@@ -1,11 +1,8 @@
 .advantages {
-  background: url('../img/phones.png') right -70% bottom no-repeat;
-  background-size: 70% auto;
-}
-
-.advantages__container {
-  padding-top: 15%;
+  padding-top: 14%;
   padding-bottom: 7%;
+  background: url('../img/phones.png') right -55% bottom no-repeat;
+  background-size: 65% auto;
 }
 
 .advantages__heading {
@@ -28,7 +25,6 @@
 .advantages__list {
   @include list;
   padding-bottom: 24px;
-  margin-bottom: 1%;
 }
 
 .advantages__item {

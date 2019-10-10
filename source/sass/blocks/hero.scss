@@ -1,24 +1,40 @@
 .hero {
   position: relative;
+  padding-top: 17%;
+  padding-bottom: 11%;
   color: #fff;
   background-color: #06026C;
   background-image: linear-gradient( -90deg, #381BD6, #06026C);
 }
 
-.hero__container {
-  padding-top: 10%;
-  padding-bottom: 12%;
+.hero__heading {
+  margin-bottom: 24px;
 }
 
 .hero__button {
   margin-bottom: 10px;
+
+  &--white {
+    margin-top: 14px;
+  }
 }
 
 .hero__phone-wrapper {
   position: absolute;
-  bottom: 80px;
+  bottom: 24px;
   right: 6%;
-  padding: 0 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 12%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .07);
+
+  & > img {
+  max-width: 42%;
+  }
 }
 
 .hero__icon {
@@ -37,8 +53,8 @@
   }
 
   &--orange {
-    top: 18%;
-    left: 9%;
+    top: 20%;
+    left: 10%;
     background-color: #F6941E;
   }
 
@@ -51,15 +67,15 @@
 
   &--turquoise {
     top: auto;
-    bottom: 18%;
-    left: 9%;
+    bottom: 20%;
+    left: 10%;
     background-color: #74BDB0;
   }
 
   &--green {
-    top: 18%;
+    top: 20%;
     left: auto;
-    right: 9%;
+    right: 10%;
     background-color: #74B65F;
   }
 
@@ -73,9 +89,9 @@
 
   &--azure {
     top: auto;
-    bottom: 18%;
+    bottom: 20%;
     left: auto;
-    right: 9%;
+    right: 10%;
     background-color: #3EB5F1;
   }
 }
