@@ -26,7 +26,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 0 12%;
   width: 40vw;
   height: 40vw;
   border-radius: 50%;
@@ -93,5 +92,75 @@
     left: auto;
     right: 10%;
     background-color: #3EB5F1;
+  }
+}
+
+@media (max-width: 1400px){
+  .hero__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+
+    img {
+      max-width: 60%;
+    }
+  }
+
+  .hero {
+    padding-top: 150px;
+  }
+
+  .hero__phone-wrapper {
+    bottom: auto;
+    top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 110px;
+    // padding-bottom: 60%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero__heading {
+    margin-bottom: 8px;
+  }
+
+  .hero__button {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .hero__phone-wrapper {
+    bottom: -12vw;
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .hero__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero__phone-wrapper {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .hero__icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 16px;
   }
 }

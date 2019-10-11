@@ -25,7 +25,7 @@
 
 .header__list a {
   display: inline-block;
-  padding: 0 12px;
+  padding: 6px 12px;
   font-size: 18px;
   font-weight: 900;
   color: inherit;
@@ -48,5 +48,38 @@
   &:hover,
   &:focus {
     opacity: .8;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    padding: 14px 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    max-width: 80px;
+  }
+
+  .header__list {
+    padding-left: 0;
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+    text-align: center;
+    background-color: rgba(9,4, 111, 0.95);
+    transform: translateX(-150%);
+    transition: transform .3s;
+    z-index: 1;
   }
 }
