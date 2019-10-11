@@ -1,4 +1,5 @@
 .advantages {
+  min-height: 100vh;
   padding-top: 14%;
   padding-bottom: 7%;
   background: url('../img/phones.png') right -55% bottom no-repeat;
@@ -48,5 +49,24 @@
 
   img {
     max-width: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding-bottom: 20%;
+    background-position: right -100% bottom;
+  }
+
+  .advantages__item {
+    padding-left: 64px;
+  }
+
+  .advantages__icon {
+    width: 56px;
+
+    img {
+      max-width: 36px;
+    }
   }
 }

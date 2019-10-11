@@ -146,13 +146,14 @@ body {
 
   &--blue {
     color: #fff;
-    background-color: #fff;
+    background-color: #0F087D;
     // background-image: linear-gradient(to bottom, #0F087D 50%, #F6941E 50%);
 
     &:hover,
     &:focus {
       color: #fff;
-      background-position: 0 100%;
+      // background-position: 0 100%;
+      background-color: #F6941E;
     }
   }
 }
