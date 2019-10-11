@@ -1,4 +1,5 @@
 .benefits {
+  min-height: 100vh;
   padding-top: 7%;
   padding-bottom: 12%;
   font-size: 18px;
@@ -18,6 +19,7 @@
 .benefits__list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1080px;
   margin: 0 auto;
   justify-content: center;
@@ -31,5 +33,19 @@
 
   p {
     opacity: .66;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits__item {
+    margin-bottom: 32px;
+
+    h3 {
+      margin: 5px 0 10px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
   }
 }

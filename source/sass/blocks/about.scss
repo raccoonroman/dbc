@@ -1,8 +1,10 @@
 .about {
   position: relative;
+  min-height: 100vh;
   padding-top: 13%;
   padding-bottom: 8%;
   text-align: right;
+  overflow: hidden;
 
   p {
     opacity: .66;
@@ -58,9 +60,41 @@
   }
 }
 
+.about__col-6 {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 768px) {
   .about__col-6 {
     width: 54%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-bottom: 35%;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .about__heading {
+    margin-bottom: 0;
+  }
+
+  .about__button {
+    margin-top: 15px;
+  }
+
+  .about__phone {
+    width: 90vw;
+    height: 90vw;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
   }
 }
 
