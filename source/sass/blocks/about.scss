@@ -33,7 +33,6 @@
 .about__button {
   margin: 20px 0;
   background-color: #F6941E;
-  // background-image: linear-gradient(to bottom, #F6941E 50%, #0f077b 50%);
 
   &:hover,
   &:focus {
@@ -52,12 +51,54 @@
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  background-color: #EEEEF6;
-  border-radius: 50%;
+
 
   img {
     max-width: 43%;
+    position: relative;
+    z-index: 1;
   }
+}
+
+.about__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(15, 8, 125, .07);
+  will-change: transform;
+  animation: pulsate 2s ease-in-out infinite alternate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    width: 76%;
+    height: 76%;
+    border-radius: 50%;
+    background-color: rgba(15, 8, 125, .07);
+    will-change: transform;
+    animation: pulsate 2s ease-in-out infinite alternate;
+    animation-delay: -0.3s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    width: 56%;
+    height: 56%;
+    border-radius: 50%;
+    background-color: rgba(15, 8, 125, .07);
+    will-change: transform;
+    animation: pulsate 2s ease-in-out infinite alternate;
+    animation-delay: -0.6s;
+  }
+
 }
 
 .about__col-6 {
@@ -97,5 +138,3 @@
     bottom: 0;
   }
 }
-
-

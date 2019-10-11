@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 6;
   padding: 36px 0 20px;
   color: #fff;
   background-color: #06026C;
@@ -80,6 +80,6 @@
     background-color: rgba(9,4, 111, 0.95);
     transform: translateX(-150%);
     transition: transform .3s;
-    z-index: 1;
+    z-index: 7;
   }
 }
