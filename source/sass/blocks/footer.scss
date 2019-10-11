@@ -45,3 +45,19 @@
     opacity: .8;
   }
 }
+
+@media(max-width: 767px) {
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+    order: 1;
+  }
+
+  .footer__solial-list {
+    margin-top: 30px;
+  }
+}

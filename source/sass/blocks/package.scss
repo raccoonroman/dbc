@@ -51,15 +51,40 @@
   border-bottom: 1px solid #E6E9EE;
 }
 
-.packages__button {
+.package__button {
   margin-bottom: 10px;
+  min-width: 1px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .packages__button {
+  .package__button {
     padding: 14px;
-    min-width: 300px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .package {
+    padding: 15px 15px 10px;
+  }
+
+  .package__title {
+    margin-top: 5px;
+    margin-bottom: 4px;
+  }
+
+  .package__list {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .package__subtitle {
+    padding-bottom: 8px;
+  }
+
+  .package__per-date {
+    margin-bottom: 4px;
   }
 }
 

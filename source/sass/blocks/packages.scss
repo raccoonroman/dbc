@@ -9,10 +9,21 @@
   @include list;
   margin: 0 -15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .packages__heading {
   padding-bottom: 20px;
   margin-bottom: 3%;
+}
+
+@media (max-width: 767px) {
+  .packages__heading {
+    margin-bottom: 0;
+  }
+
+  .packages__item {
+    margin-bottom: 20px;
+  }
 }
