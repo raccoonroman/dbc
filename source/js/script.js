@@ -4,15 +4,15 @@ new fullpage('#fullpage', {
   anchors: ['hero', 'advantages', 'video', 'about', 'benefits', 'packages', 'partners', 'contacts', 'footer'],
   navigation: true,
   // navigationTooltips: ['hero', 'advantages', 'video', 'about', 'benefits'],
-  slidesNavigation: true,
+  // slidesNavigation: true,
   dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
-  loopBottom: true,
-  loopTop: true,
+  scrollOverflow: true,
 });
+
+
 
 var hamburger = document.querySelector(".hamburger");
 // var navMain = document.querySelector('.header-nav__list');
-
 
 hamburger.addEventListener('click', function() {
   if (hamburger.classList.contains('open')) {
