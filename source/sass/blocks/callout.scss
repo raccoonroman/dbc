@@ -1,0 +1,77 @@
+.callout {
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #08022B;
+  overflow: hidden;
+}
+
+.callout__circle {
+  position: absolute;
+  left: 10vw;
+  top: -60vw;
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50%;
+  background-color: #110841;
+  will-change: transform;
+  animation: pulsate 2s ease-in-out infinite alternate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    width: 76%;
+    height: 76%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .07);
+    will-change: transform;
+    animation: pulsate 2s ease-in-out infinite alternate;
+    animation-delay: -0.3s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    width: 56%;
+    height: 56%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .07);
+    will-change: transform;
+    animation: pulsate 2s ease-in-out infinite alternate;
+    animation-delay: -0.6s;
+  }
+}
+
+.callout__text-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 580px;
+  margin: 0 auto;
+  padding-top: 4%;
+}
+
+.callout__heading {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  line-height: 1.1;
+}
+
+.callout__description {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-bottom: 2%;
+  font-size: 18px;
+  opacity: .7;
+  line-height: 1.5;
+}
+
+.callout__button {
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+}

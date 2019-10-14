@@ -240,34 +240,60 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="callout">
+        <div class="callout__circle"></div>
         <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <p class="heading">Interested to know more about us and what we do?</p>
-              <p class="contacts__description">Whether it's in regards to feedback, partnerships, careers, or anything else, we’re here to listen. Don’t be afraid to reach out!</p>
-              <a href="#" class="button button--white contacts__button">Try Digital Business Card</a>
-              <a href="#" class="button contacts__button">Contact Our Team</a>
-            </div>
-            <div class="col-6">
-              <p class="contacts__form-title">Get In Touch:</p>
-              <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-                <label class="visually-hidden" for="user-name">Your name:</label>
-                <input id="user-name" placeholder="Name:" type="text" name="user-name" required>
-                <label class="visually-hidden" for="user-email">Your email:</label>
-                <input id="user-email" placeholder="Email:" type="email" name="user-email" required>
-                <label class="visually-hidden" for="user-message">Your message:</label>
-                <textarea id="user-message" placeholder="Message:" name="user-message" rows="5"></textarea>
-                <button class="contacts__form-button">Send</button>
-              </form>
-            </div>
+          <div class="callout__text-wrapper">
+            <p class="heading callout__heading">Interested to know more about us and what we do?</p>
+            <p class="callout__description">Whether it's in regards to feedback, partnerships, careers, or anything else, we’re here to listen. Don’t be afraid to reach out!</p>
           </div>
+          <a href="#" class="button button--white callout__button">Try Digital Business Card</a>
+          <a href="#" class="button callout__button">Contact Our Team</a>
         </div>
       </section>
 
       <footer class="footer">
         <div class="container">
-          <div class="footer__row">
+          <ul class="footer__widgets-list">
+            <li class="footer__widgets-item">
+              <p class="footer__widget-title">SOLUTIONS</p>
+              <ul class="footer__menu-list">
+                <li><a href="#">For patients</a></li>
+                <li><a href="#">For businesses</a></li>
+              </ul>
+            </li>
+            <li class="footer__widgets-item">
+              <p class="footer__widget-title">PRODUCTS</p>
+              <ul class="footer__menu-list">
+                <li><a href="#">Symptom checker</a></li>
+                <li><a href="#">Immunizations</a></li>
+              </ul>
+            </li>
+            <li class="footer__widgets-item">
+              <p class="footer__widget-title">COMPANY</p>
+              <ul class="footer__menu-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+              </ul>
+            </li>
+            <li class="footer__widgets-item">
+              <p class="footer__widget-title">RESOURCES</p>
+              <ul class="footer__menu-list">
+                <li><a href="#">Partnerships</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Newsroom</a></li>
+              </ul>
+            </li>
+            <li class="footer__widgets-item">
+              <p class="footer__widget-title">SUBSCRIBE TO OUR NEWSLETTER</p>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+                <input id="your-email" type="email" name="your-email" placeholder="Your email address">
+                <button class="subscribe-form-button">Subscribe</button>
+              </form>
+            </li>
+          </ul>
+          <div class="footer__bottom">
             <a class="footer__logo" href="/">
               <img data-src="img/logo-124x74.png" alt="" width="124" height="74">
             </a>
