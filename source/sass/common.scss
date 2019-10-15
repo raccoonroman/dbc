@@ -229,9 +229,15 @@ body {
       border-bottom-right-radius: 5px;
     }
   }
+
+  .fp-responsive .fp-section,
+  .fp-responsive .fp-slide,
+  .fp-responsive .fp-tableCell{
+      height: auto !important;
+  }
 }
 
-// .fp-scroller {
-//   transition-duration: 500ms !important;
-//   transition-timing-function: ease !important;
-// }
+.fp-scroller {
+  transition-duration: 600ms !important;
+  // transition-timing-function: ease !important;
+}

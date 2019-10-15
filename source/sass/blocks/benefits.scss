@@ -1,13 +1,13 @@
 .benefits {
   min-height: 100vh;
-  // padding-top: 7%;
-  // padding-bottom: 12%;
+  padding-top: 20px;
   font-size: 18px;
   text-align: center;
   background-color: #F0F0F5;
 }
 
 .benefits__heading {
+  padding-top: 40px;
   margin-bottom: 26px;
 }
 
@@ -37,10 +37,6 @@
 }
 
 @media (max-width: 767px) {
-  .benefits__heading {
-    margin-top: 30px;
-  }
-
   .benefits__item {
     margin-bottom: 32px;
 

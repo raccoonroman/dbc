@@ -1,13 +1,25 @@
 "use strict";
 
-new fullpage('#fullpage', {
-  anchors: ['hero', 'advantages', 'video', 'about', 'benefits', 'packages', 'partners', 'contacts', 'footer'],
+$('[data-aos]').each(function(){ $(this).addClass("aos-init"); });
+
+$('#fullpage').fullpage({
   navigation: true,
-  // navigationTooltips: ['hero', 'advantages', 'video', 'about', 'benefits'],
-  // slidesNavigation: true,
-  dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
   scrollOverflow: true,
+  responsiveWidth: 767,
+  scrollingSpeed: 1000,
+  // lazyLoading: false,
+  onLeave: function() {
+    $('.section [data-aos]').each(function() {
+      $(this).removeClass("aos-animate")
+    });
+  },
+  afterLoad: function() {
+    $('.section.active [data-aos]').each(function() {
+      $(this).addClass("aos-animate")
+    });
+  }
 });
+
 
 
 
@@ -23,3 +35,39 @@ hamburger.addEventListener('click', function() {
     // navMain.classList.add('header-nav__list--active');
   }
 });
+
+
+
+// Define our viewportWidth variable
+var viewportWidth;
+var sections = document.querySelectorAll('.section');
+
+// my custom function
+var removeSectionScroll = function (section) {
+  section.classList.add('fp-noscroll');
+};
+
+// Set/update the viewportWidth value
+var setViewportWidth = function () {
+  viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+}
+
+// Log the viewport width into the console
+var logWidth = function () {
+  if (viewportWidth < 768) {
+    // my custom code
+    for (var i = 0; i < sections.length; i++) {
+      removeSectionScroll(sections[i]);
+    }
+  }
+}
+
+// Set our initial width and log it
+setViewportWidth();
+logWidth();
+
+// On resize events, recalculate and log
+window.addEventListener('resize', function () {
+  setViewportWidth();
+  logWidth();
+}, false);

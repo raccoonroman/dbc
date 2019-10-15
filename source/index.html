@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="500" data-aos-delay="0">
 <main>
   <div id="fullpage">
     <h1 class="visually-hidden">Digital Business Card</h1>
@@ -75,34 +75,34 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h2 class="heading advantages__heading">Digital Business<br>Card Solution</h2>
+            <h2 data-aos="fade-right" class="heading advantages__heading">Digital Business<br>Card Solution</h2>
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="advantages__item">
                 <div class="advantages__icon">
                   <img data-src="img/seo.svg" width="51" height="51" alt="">
                 </div>
                 <p>DBC is a digital business card solution. It combines the advantages of online marketing with a traditional business card. Your business profile, branding, contacts details, website and social media links are all in the one place on your Smart Card.</p>
               </li>
-              <li class="advantages__item">
+              <li data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="150" class="advantages__item">
                 <div class="advantages__icon">
                   <img data-src="img/innovation.svg" width="52" height="52" alt="">
                 </div>
                 <p>It is an innovative technology that is new to Ireland and has had big success in both the UK and the U.S. to date.</p>
               </li>
-              <li class="advantages__item">
+              <li data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="300" class="advantages__item">
                 <div class="advantages__icon">
                   <img data-src="img/chat.svg" width="48" height="48" alt="">
                 </div>
                 <p>The technology is advanced but easy to use. Sharing and forwarding of your Smart Card can be done through instant messaging – text and WhatsApp, by email and through the use of the cards QR code.</p>
               </li>
             </ul>
-            <a href="#" class="button button--blue">Try Digital Business Card</a>
+            <a data-aos="flip-left" data-aos-delay="450" href="#" class="button button--blue">Try Digital Business Card</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section video">
+    <section class="section video fp-noscroll">
       <video controls poster="img/video-poster-with-text.jpg">
         <source data-src="video/flower.webm" type="video/webm">
         <source data-src="/video/flower.mp4" type="video/mp4">
@@ -317,11 +317,10 @@
   </div>
 </main>
 
-
-
-
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/scrolloverflow.min.js"></script>
-<script src="js/fullpage.min.js"></script>
+<script src="js/fullpage.extensions.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 
