@@ -33,9 +33,7 @@
     "start": "gulp start"
   },
   "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "last 1 version",
   ],
   "editorconfig-cli": [
     "*.json",
