@@ -7,7 +7,6 @@ $('#fullpage').fullpage({
   scrollOverflow: true,
   responsiveWidth: 767,
   scrollingSpeed: 1000,
-  // lazyLoading: false,
   onLeave: function() {
     $('.section [data-aos]').each(function() {
       $(this).removeClass("aos-animate")
