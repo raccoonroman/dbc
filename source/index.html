@@ -8,41 +8,42 @@
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="500" data-aos-delay="0">
-<main>
-  <div id="fullpage">
-    <h1 class="visually-hidden">Digital Business Card</h1>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav">
-          <a class="header__logo" href="/">
-            <img src="img/logo.png" alt="" width="138" height="82">
-          </a>
-          <button class="hamburger" title="Open menu" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="header__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Discover DBC</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">Customer Stories</a></li>
-            <li><a href="#">News & Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
+<div id="fullpage">
+  <h1 class="visually-hidden">Digital Business Card</h1>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a class="header__logo" href="/">
+          <img src="img/logo.png" alt="" width="138" height="82">
+        </a>
+        <button class="hamburger" title="Open menu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="header__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Discover DBC</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Customer Stories</a></li>
+          <li><a href="#">News & Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <section class="section hero">
       <div class="container hero__container">
         <div class="row">
           <div class="col-6">
-            <p class="heading hero__heading">The digital front door to DBC is finally here.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <a data-aos="zoom-in-right" href="#" class="button button--white hero__button hero__button--white">Try Digital Business Card</a>
-            <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="button hero__button">Contact Our Team</a>
+            <p data-aos="zoom-in-right" class="heading hero__heading">The digital front door to DBC is finally here.</p>
+            <p data-aos="zoom-in-right" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <a data-aos="zoom-in-right" data-aos-delay="200" href="#" class="button button--white hero__button hero__button--white">Try Digital Business Card</a>
+            <a data-aos="zoom-in-right" data-aos-delay="300" href="#" class="button hero__button">Contact Our Team</a>
           </div>
         </div>
       </div>
@@ -72,6 +73,7 @@
 
 
     <section class="section advantages">
+      <div data-aos="fade-left" data-aos-duration="1500" class="advantages__bg"></div>
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -124,14 +126,14 @@
       </div>
       <div  class="about__phone">
         <div class="about__circle"></div>
-        <img data-src="img/phone.png" alt="" width="323" height="640">
+        <img data-aos="zoom-in" data-src="img/phone.png" alt="" width="323" height="640">
       </div>
     </section>
 
     <section class="section benefits">
       <div class="container">
-        <p class="heading benefits__heading">Our Benefits</p>
-        <p class="benefits__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+        <p data-aos="fade-down" class="heading benefits__heading">Our Benefits</p>
+        <p data-aos="fade-down" data-aos-delay="100" class="benefits__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         <ul class="benefits__list">
           <li data-aos="fade-left" class="benefits__item col-4">
             <img data-src="img/info-graph.svg" width="70" height="70" alt="">
@@ -162,7 +164,7 @@
     <div class="section">
       <section class="packages">
         <div class="container">
-          <p class="heading packages__heading">Packages we offer</p>
+          <p data-aos="fade-down" class="heading packages__heading">Packages we offer</p>
           <ul class="packages__list">
             <li data-aos="flip-left" class="packages__item col-4">
               <article class="package">
@@ -313,9 +315,8 @@
         </div>
       </footer>
     </div>
-
-  </div>
-</main>
+  </main>
+</div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/aos.js"></script>

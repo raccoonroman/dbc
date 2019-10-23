@@ -2,7 +2,16 @@
   min-height: 100vh;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: url('../img/phones.png') right -55% bottom no-repeat;
+}
+
+.advantages__bg {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background: url("../img/phones.png") right -55% bottom no-repeat;
   background-size: 65% auto;
 }
 
@@ -53,8 +62,7 @@
 }
 
 @media (max-width: 767px) {
-  .advantages {
-    // padding-bottom: 20%;
+  .advantages__bg {
     background-position: right -100% bottom;
   }
 
