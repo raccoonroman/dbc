@@ -2,10 +2,10 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var plumber = require("gulp-plumber"); // видит ошибку, но не прерывает программы, а выводит ошибку в консоль
+var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create(); // локальный сервер для разработки
+var server = require("browser-sync").create();
 
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
@@ -14,7 +14,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml"); // нужен вместе с пакетом posthtml-include, чтобы развернуть svg-спрайт из include
 var include = require("posthtml-include");
-var htmlmin = require("gulp-htmlmin"); // to minify HTML
+var htmlmin = require("gulp-htmlmin");
 var del = require("del");
 var uglify = require('gulp-uglify');
 
@@ -34,10 +34,10 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("images", function () { // запускается один раз командой npx gulp images
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{gif,png,jpg,jpeg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 7}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo({
         plugins: [
@@ -48,7 +48,7 @@ gulp.task("images", function () { // запускается один раз ко
   .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("webp", function () { // запускается один раз командой npx gulp webp
+gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
@@ -88,7 +88,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/*.*", // маска *.* не позволяет копировать папки sprite-svg и pixel-glass
+      "source/img/*.*", // маска *.* не позволяет копировать папки sprite-svg
     ], {
       base: "source"
     })
